@@ -1,6 +1,10 @@
 const express = require("express");
 
+const cors = require("cors");
+
 const routes = express.Router();
+
+routes.use(cors());
 
 const middleware = require("./controller/middleware");
 
